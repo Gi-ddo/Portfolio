@@ -116,18 +116,22 @@ body {
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: var(--accent-green-dark);
+  transform: scale(1.03);
 }
 
 .profile-pic img {
-  width: 250px;
-  height: 250px;
+  width: 300px; /* slightly larger */
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: -1rem; /* nudge left */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* soft shadow */
+  transition: transform 0.3s ease;
 }
 
 .logo {
@@ -292,8 +296,9 @@ body {
   max-width: 800px;
   margin: 5rem auto;
   padding: 2rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color); /* fix mismatch */
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* subtle shadow */
 }
 
 .project-detail h1 {
@@ -339,7 +344,7 @@ body {
 .contact-section {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color); /* was secondary, now unified */
 }
 
 .contact-section h2 {
@@ -377,4 +382,3 @@ body {
   background-color: var(--accent-green-dark);
   transform: scale(1.05);
 }
-https://www.linkedin.com/in/gift-maposa-b6478621b/
