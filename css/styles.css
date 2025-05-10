@@ -195,3 +195,76 @@ body {
   font-size: 0.95rem;
   color: var(--text-muted);
 }
+
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--text-light);
+}
+
+.project-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-container.left .project-text {
+  order: 1;
+}
+.project-container.left .project-media {
+  order: 2;
+}
+.project-container.right .project-media {
+  order: 1;
+}
+.project-container.right .project-text {
+  order: 2;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project-text.sticky {
+  position: sticky;
+  top: 80px; /* adjust depending on navbar height */
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-left: 3px solid var(--accent-green);
+  z-index: 400;
+}
+
+.project-text h3 {
+  font-size: 1.5rem;
+  color: var(--accent-green);
+  margin-bottom: 0.5rem;
+}
+
+.project-text p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.project-media {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project-media img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 300px;
+  background-color: var(--secondary-color);
+}
