@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 :root {
   /* Primary Theme Colors */
   --primary-color: #0f0f0f;
@@ -83,6 +85,24 @@ body {
   background-color: var(--primary-color);
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-green);
+  transform: scale(1.2);
+}
+
+
 .intro {
   max-width: 60%;
 }
@@ -116,7 +136,7 @@ body {
   color: var(--text-light);
 }
 
-.social-icons {
+/* .social-icons {
   display: flex;
   gap: 1rem;
 }
@@ -129,7 +149,7 @@ body {
 
 .social-icons a:hover {
   color: var(--accent-green);
-}
+} */
 
 .experience-section {
   padding: 4rem 2rem;
