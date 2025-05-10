@@ -130,3 +130,48 @@ body {
 .social-icons a:hover {
   color: var(--accent-green);
 }
+
+.experience-section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.experience-year {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.year-sticky {
+  position: sticky;
+  top: 70px;
+  background-color: var(--primary-color);
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--accent-green);
+  border-bottom: 1px solid var(--accent-green-dark);
+  z-index: 500;
+}
+
+.experience-item {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent-green-dark);
+}
+
+.experience-item h4 {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.experience-item p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
