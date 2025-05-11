@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* ========== VARIABLE DECLARATION ========== */
 :root {
   /* Primary Theme Colors */
   --primary-color: #0f0f0f;
@@ -14,6 +15,7 @@
   --text-muted: #a3a3a3;
 }
 
+/* ========== BODY STYLES ========== */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +27,18 @@ body {
   background-color: var(--primary-color);
   color: var(--text-light);
   line-height: 1.6;
+}
+
+/* ========== NAVBAR STYLES ========== */
+.glow-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-green);
+  text-shadow: 0 0 10px var(--accent-green-dark);
+}
+
+.glow-logo:hover {
+  text-shadow: 0 0 20px var(--accent-green-dark);
 }
 
 .navbar {
@@ -76,15 +90,6 @@ body {
   color: var(--accent-green);
 }
 
-.landing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5rem 2rem;
-  background-color: var(--primary-color);
-}
-
 .social-links {
   display: flex;
   gap: 1rem;
@@ -102,6 +107,23 @@ body {
   transform: scale(1.2);
 }
 
+/* ========== LANDING PAGE STYLES ========== */
+.glow-header {
+  font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+  font-weight: 600;
+  position: relative;
+  color: var(--accent-green);
+  text-shadow: 0 0 10px var(--accent-green-dark);
+}
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: var(--primary-color);
+}
 
 .intro {
   max-width: 60%;
@@ -125,12 +147,12 @@ body {
 }
 
 .profile-pic img {
-  width: 300px; /* slightly larger */
+  width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  margin-left: -1rem; /* nudge left */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* soft shadow */
+  margin-left: -1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -140,21 +162,7 @@ body {
   color: var(--text-light);
 }
 
-/* .social-icons {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-icons a {
-  color: var(--text-light);
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: var(--accent-green);
-} */
-
+/* ========== EXPERIENCE SECTION STYLES ========== */
 .experience-section {
   padding: 4rem 2rem;
   max-width: 800px;
@@ -200,6 +208,7 @@ body {
   color: var(--text-muted);
 }
 
+/* ========== PROJECTS SECTION STYLES ========== */
 .projects-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -242,7 +251,7 @@ body {
 
 .project-text.sticky {
   position: sticky;
-  top: 80px; /* adjust depending on navbar height */
+  top: 80px;
   background-color: var(--primary-color);
   padding: 1rem;
   border-left: 3px solid var(--accent-green);
@@ -296,9 +305,9 @@ body {
   max-width: 800px;
   margin: 5rem auto;
   padding: 2rem;
-  background-color: var(--primary-color); /* fix mismatch */
+  background-color: var(--primary-color);
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-detail h1 {
@@ -321,30 +330,11 @@ body {
   border-radius: 8px;
 }
 
-.site-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: var(--primary-color);
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  border-top: 1px solid var(--secondary-color);
-  margin-top: 4rem;
-}
-
-.site-footer a {
-  color: var(--accent-green);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.site-footer a:hover {
-  text-decoration: underline;
-}
-
+/* ========== CONTACT SECTION STYLES ========== */
 .contact-section {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: var(--primary-color); /* was secondary, now unified */
+  background-color: var(--primary-color);
 }
 
 .contact-section h2 {
@@ -383,6 +373,28 @@ body {
   transform: scale(1.05);
 }
 
+/* ========== FOOTER SECTION STYLES ========== */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--secondary-color);
+  margin-top: 4rem;
+}
+
+.site-footer a {
+  color: var(--accent-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  text-shadow: 0 0 20px var(--accent-green-dark);
+}
+
+/* ========== ADDITIONAL STYLES(scroll-btn) ========== */
 #scrollToTop {
   position: fixed;
   bottom: 40px;
@@ -396,7 +408,7 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  display: none; /* hidden by default */
+  display: none;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
