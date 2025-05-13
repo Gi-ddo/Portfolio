@@ -107,6 +107,8 @@ body {
   transform: scale(1.2);
 }
 
+
+
 /* ========== LANDING PAGE STYLES ========== */
 .glow-header {
   font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
@@ -371,6 +373,24 @@ body {
 .btn-contact:hover {
   background-color: var(--accent-green-dark);
   transform: scale(1.05);
+}
+
+/* ========== CONTACT BUTTONS ========== */
+.social-links-two {
+  /* display: flex; */
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-links-two a {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links-two a:hover {
+  color: var(--accent-green);
+  transform: scale(1.2);
 }
 
 /* ========== FOOTER SECTION STYLES ========== */
