@@ -1,3 +1,13 @@
+export const projectOrder = [
+  "explosive-finger",
+  "khamani",
+  "wacky-deliveries",
+  "plant-mom-match",
+  "hyper-star-fury",
+  "saw-a-kraken",
+  "reclaim"
+];
+
 const data = {
   "explosive-finger": {
     title: "Explosive Finger",
@@ -70,6 +80,8 @@ const data = {
     alignment: "left"
   }
 };
+
+
 
 export const projectData = data;
 
