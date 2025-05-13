@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const project = projectData[id];
+const project = data[id];
 
 const container = document.getElementById("project-content");
 
