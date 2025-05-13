@@ -394,7 +394,7 @@ body {
   text-shadow: 0 0 20px var(--accent-green-dark);
 }
 
-/* ========== ADDITIONAL STYLES(scroll-btn) ========== */
+/* ========== ADDITIONAL STYLES ========== */
 #scrollToTop {
   position: fixed;
   bottom: 40px;
@@ -430,3 +430,33 @@ body {
   background-color: var(--accent-green);
   border-radius: 10px;
 }
+
+.nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--accent-green);
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-arrow:hover {
+  background-color: var(--accent-green-dark);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.nav-arrow.left {
+  left: 20px;
+}
+
+.nav-arrow.right {
+  right: 20px;
+}
+
