@@ -26,6 +26,7 @@ if (project) {
       <h1>${project.title}</h1>
       <img src="${project.gif}" alt="${project.title} gameplay" class="project-gif"/>
       <p>${project.description}</p>
+      <p>${project.actions}</p>
       <p><strong>Tech Used:</strong> ${project.tech.join(", ")}</p>
       <a href="${project.link}" class="btn-secondary" target="_blank">Play / View</a>
 
