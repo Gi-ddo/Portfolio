@@ -1,4 +1,4 @@
-const projectData = {
+const data = {
   "explosive-finger": {
     title: "Explosive Finger",
     short_description: "A puzzle game where you use explosive projectiles to solve levels.",
@@ -70,3 +70,7 @@ const projectData = {
     alignment: "left"
   }
 };
+
+export const projectData = data;
+
+window.data = projectData;
