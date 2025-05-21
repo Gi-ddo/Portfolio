@@ -45,6 +45,10 @@ body {
   text-shadow: 0 0 20px var(--accent-green-dark);
 }
 
+.hamburger {
+  display: none;
+}
+
 #menu-button, #close-button {
   font-size: 1.8rem;
   color: var(--text-light);
