@@ -3,12 +3,12 @@
 /* ========== VARIABLE DECLARATION ========== */
 :root {
   /* Primary Theme Colors */
-  --primary-color: #0f0f0f;
-  --secondary-color: #1f1f1f;
+  --primary-color: #17202b;
+  --secondary-color: #0e0e24;
 
   /* Accent Colors */
-  --accent-green: #4ade80;
-  --accent-green-dark: #22c55e;
+  --accent-green: #0077b6;
+  --accent-green-dark: #0000FF;
 
   /* Text Colors */
   --text-light: #f5f5f5;
@@ -140,7 +140,7 @@ body {
   font-weight: 600;
   position: relative;
   color: var(--accent-green);
-  text-shadow: 0 0 10px var(--accent-green-dark);
+  text-shadow: 0 0 10px var(--accent-green);
 }
 
 .landing {
