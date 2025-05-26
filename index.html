@@ -3,18 +3,33 @@
         <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <!-- SEO Meta Tags -->
+            <meta name="title" content="Gift Maposa | Game Developer Portfolio" />
+            <meta name="description" content="Unity game developer based in South Africa. Passionate about building immersive games like Fatpack Joe and Khamani. Check out the portfolio!" />
+            <meta name="keywords" content="Gift Maposa, Game Developer, Unity Developer, C#, Indie Games, Fatpack Joe, Khamani, Game Portfolio, South Africa" />
+            <meta name="author" content="Gift Maposa" />
+            <meta name="robots" content="index, follow" />
+            <!-- Boilerplate Tags -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
             <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
             <title>Gift Maposa | Game Developer</title>
+            <link rel="icon" type="image/x-icon" href="./assets/images/game-development-favicon.png" />
+            <!-- Import Tags -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
             <link rel="stylesheet" href="css/styles.css" />
+            <!-- Open Graph (for social sharing) -->
+            <meta property="og:title" content="Gift Maposa | Game Developer Portfolio" />
+            <meta property="og:description" content="Check out Gift Maposa's portfolio, featuring Unity-powered games like Fatpack Joe and Khamani." />
+            <meta property="og:image" content="./assets/images/Gift1.jpg" />
+            <!-- <meta property="og:url" content="https://your-domain.com" /> -->
+            <meta name="twitter:card" content="summary_large_image" />
         </head>
         <button id="scrollToTop" title="Go to top">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
 
     <body>
-
+        <div id="particles-js"></div>
         <header class="navbar">
             <nav class="nav-container">
                 <div class="glow-logo">Gift Maposa</div>
@@ -43,7 +58,7 @@
         </header>
 
     <!-- ===================HOME SECTION============================ -->
-    <section id="home" class="landing">
+    <section id="home" class="landing" data-aos="fade-up">
         <div class="profile-pic">
             <img src="assets/images/Gift1.jpg" alt="Gift Maposa Portrait" />
         </div>
@@ -59,13 +74,14 @@
     </section>
 
     <!-- ===================EXPERIENCE SECTION============================ -->
-    <section id="experience" class="experience-section">
-        <h2>My Experience</h2>
+    <section id="experience" class="experience-section" data-aos="fade-up">
+        <h2 class="section-heading"><i class="fa-solid fa-briefcase"></i> My Experience</h2>
 
         <div class="experience-year">
             <h3 class="year-sticky">Present</h3>
-            <div class="experience-item">
-                <h4>Game Developer – Itthynk Gaming</h4> (Add Images)
+            <div class="experience-item glass-card">
+                <h4>Game Developer – Itthynk Gaming</h4>
+                <img src="./assets/images/itthynkgaming-logo.png" alt="ItThynk Gaming Logo" class="company-logo">
                 <p>I'm a Game Developer at ItThynk Gaming. I help the company in creating gaming solutions through my expertise 
                     as a game developer. I mainly focus on creating systems that allow us to make different types of games that 
                     they would like to make. I specialise in mostly gameplay programming, but my skills extend further into 
@@ -73,8 +89,9 @@
                     design documents and the overall vision of the game.</p>
                 </p>
             </div>
-            <div class="experience-item">
-                <h4>Game Developer – Atrybute Graphics</h4> (Add Images)
+            <div class="experience-item glass-card">
+                <h4>Game Developer – Atrybute Graphics</h4>
+                <img src="./assets/images/atrybute-logo.png" alt="Atrybute Logo" class="company-logo">
                 <p>I'm a Game Developer and Partner at Atrybute Graphics. I spend my time developing my skils as a game developer, 
                     helping the company grow and developing our flagship game, Fat Pack Joe, and our second game, Herbanetics. I 
                     spend most of my time designing and creating gamified solutions.</p>
@@ -83,15 +100,14 @@
     </section>
 
     <!-- ===================PROJECTS SECTION============================ -->
-    <section id="projects" class="projects-section">
-        <h2>Featured Projects</h2>
+    <section id="projects" class="projects-section" data-aos="fade-up">
+        <h2 class="section-heading"><i class="fa-solid fa-gamepad"></i> Featured Projects</h2>
         <div id="project-list" ></div>
     </section>
-    (Add UKNOW)
 
     <!-- ===================SKILLZ SECTION============================ -->
-    <section id="skills" class="skills-section">
-        <h2>My Skills</h2>
+    <section id="skills" class="skills-section" data-aos="fade-up">
+        <h2 class="section-heading"><i class="fa-solid fa-screwdriver-wrench"></i> My Skills</h2>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim sint consectetur expedita vero modi incidunt praesentium, reprehenderit maxime velit reiciendis iusto nobis sapiente delectus commodi tempore nostrum placeat dignissimos vitae.
         </p>
@@ -126,21 +142,22 @@
 
     <!-- ===================CONTACT SECTION============================ -->
 
-    <section id="contact" class="contact-section">
-        <h2>Let’s Connect</h2>
+    <section id="contact" class="contact-section" data-aos="fade-up">
+        <h2 class="section-heading"><i class="fa-solid fa-envelope"></i> Let’s Connect</h2>
         <p>Got a collaboration idea, a project to discuss, or just want to say what’s up? Gift’s open to chat.</p>
 
-        <div class="contact-cta">
+        <div class="contact-cta glass-card">
             <a href="mailto:maposagift4@gmail.com" class="btn-contact" target="_blank">
                 <i class="fa-solid fa-envelope"></i> Send an Email
             </a>
-        </div>
-        <br>
-        <p>OR</p>
-        <div class="social-links-two">
-            <a href="https://github.com/Gi-ddo" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gift-maposa-b6478621b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <!-- <a href="https://x.com/khethelo_sanele" target="_blank"><i class="fa-brands fa-discord"></i></a> -->
+            <br>
+            <br>
+            <p>OR</p>
+            <div class="social-links-two">
+                <a href="https://github.com/Gi-ddo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gift-maposa-b6478621b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <!-- <a href="https://x.com/khethelo_sanele" target="_blank"><i class="fa-brands fa-discord"></i></a> -->
+            </div>
         </div>
     </section>
 
@@ -149,6 +166,44 @@
         <p>Created by <a href="https://www.linkedin.com/in/profile-khethelo-nkosi" target="_blank">Khethelo</a> © 2024 All Rights Reserved</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+    <script>
+        tsParticles.load("particles-js", {
+            background: {
+            color: "transparent"
+            },
+            fpsLimit: 60,
+            particles: {
+            color: {
+                value: "#3d8bff"
+            },
+            links: {
+                enable: true,
+                color: "#3d8bff",
+                distance: 120,
+                opacity: 0.4
+            },
+            move: {
+                enable: true,
+                speed: 0.6
+            },
+            number: {
+                value: 40
+            },
+            opacity: {
+                value: 0.5
+            },
+            shape: {
+                type: "circle"
+            },
+            size: {
+                value: 2
+            }
+            },
+            detectRetina: true
+        });
+    </script>
     <script src="js/main.js"></script>
     <script type="module" src="js/project-placeholder-render.js"></script>
     </body>
