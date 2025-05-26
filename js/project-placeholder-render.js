@@ -8,7 +8,7 @@ if (projectData && container) {
     projectEl.className = `project-container ${project.alignment}`;
     
     projectEl.innerHTML = `
-      <div class="project-text sticky">
+      <div class="project-text sticky glass-card">
         <h3>${project.title}</h3>
         <p>${project.short_description}</p>
         <a href="project.html?id=${id}" class="btn-secondary">View Project</a>
