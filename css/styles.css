@@ -554,6 +554,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .tag {
@@ -625,6 +626,17 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;
+}
+
+.actions-section ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.actions-section li {
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
 
 /* ===================
