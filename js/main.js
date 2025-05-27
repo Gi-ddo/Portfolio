@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // If Satement to check window width, to not show menu btn and close if width less than 1024px
+  if (window.innerWidth < 1024) {
+    document.getElementById('menu-button').style.display = 'inline-block';
+    document.getElementById('close-button').style.display = 'none';
+    document.querySelector('.nav-links').classList.remove('show');
+  } else {
+    document.getElementById('menu-button').style.display = 'none';
+    document.getElementById('close-button').style.display = 'none';
+    document.querySelector('.nav-links').classList.add('show');
+  }
+
   // Initialize AOS
   AOS.init({
     duration: 800,
