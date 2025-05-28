@@ -667,6 +667,10 @@ body {
    TABLET (Up to 1024px wide)
    ============================= */
 @media (max-width: 1024px) {
+  html, body {
+    background-color: var(--primary-color);
+  }
+
   #menu-button, #close-button {
     font-size: 1.8rem;
     color: var(--text-light);
@@ -750,6 +754,10 @@ body {
    SMALL DEVICES (Up to 768px)
    ============================= */
 @media (max-width: 768px) {
+  html, body {
+    background-color: var(--primary-color);
+  }
+
   h1, h2, h3 {
     font-size: 1.2rem;
   }
