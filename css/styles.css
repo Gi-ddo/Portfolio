@@ -443,7 +443,7 @@ body {
 }
 
 .section-heading i {
-  color: var(--desired-blue);
+  color: var(--accent-dark);
   font-size: 1.4rem;
 }
 
@@ -451,7 +451,7 @@ body {
   position: fixed;
   bottom: 40px;
   right: 30px;
-  z-index: 100;
+  z-index: 9999;
   background-color: var(--accent);
   color: black;
   border: none;
