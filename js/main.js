@@ -4,17 +4,52 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('menu-button').style.display = 'inline-block';
     document.getElementById('close-button').style.display = 'none';
     document.querySelector('.nav-links').classList.remove('show');
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true
+    });
+    tsParticles.load("particles-js", {
+    fpsLimit: 30, // ⬅️ lower FPS
+    particles: {
+      number: { value: 10 }, // ⬅️ fewer dots
+      move: { speed: 0.2 },
+      }
+    });
   } else {
     document.getElementById('menu-button').style.display = 'none';
     document.getElementById('close-button').style.display = 'none';
     document.querySelector('.nav-links').classList.add('show');
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true
+    });
   }
 
-  // Initialize AOS
-  AOS.init({
-    duration: 800,
-    easing: "ease-in-out",
-    once: true
+  // Media lazy loading using Intersection Observer
+  const mediaObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const dataSrc = el.getAttribute('data-src');
+      if (dataSrc) {
+        el.setAttribute('src', dataSrc);
+        el.removeAttribute('data-src');
+        observer.unobserve(el);
+      }
+    }
+  });
+  }, {
+    rootMargin: "200px",
+    threshold: 0.1
+  });
+
+  // Apply to all placeholders
+  document.querySelectorAll('img[data-src]').forEach(img => {
+    mediaObserver.observe(img);
   });
 
   // Smooth scroll nav
