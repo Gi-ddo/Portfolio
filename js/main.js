@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
       once: true
     });
     tsParticles.load("particles-js", {
-    fpsLimit: 30, // ⬅️ lower FPS
+    fpsLimit: 5, // ⬅️ lower FPS
     particles: {
-      number: { value: 10 }, // ⬅️ fewer dots
-      move: { speed: 0.2 },
+      number: { value: 5 }, // ⬅️ fewer dots
+      move: { speed: 0.1 },
       }
     });
   } else {
