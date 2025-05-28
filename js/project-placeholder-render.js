@@ -14,7 +14,7 @@ if (projectData && container) {
         <a href="project.html?id=${id}" class="btn-secondary">View Project</a>
       </div>
       <div class="project-media">
-        <img src="${project.gif}" alt="${project.title} Gameplay" />
+        <img src="${project.gif}" alt="${project.title} Gameplay" loading="lazy"/>
       </div>
     `;
 
