@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Gift</h1>
 <h3 align="center">A passionate Unity Engine Game Developer from South Africa</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Gi-ddo&label=Profile%20views&color=0e75b6&style=flat" alt="Gi-ddo" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Gift-Maposa&label=Profile%20views&color=0e75b6&style=flat" alt="Gift-Maposa" /> </p>
 
 - 🔭 I’m currently working at <a href="https://itthynkgaming.co.za/">ItThynk Gaming</a>
 
-- 👨‍💻 All of my projects are available at [My GitHub Repos](https://github.com/Gi-ddo?tab=repositories)
+- 👨‍💻 All of my projects are available at [My GitHub Repos](https://github.com/Gift-Maposa?tab=repositories)
 
 - 📫 How to reach me **maposagift4@gmail.com**
 
@@ -48,8 +48,10 @@
 
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Gi-ddo&show_icons=true&locale=en&layout=compact" alt="Gi-ddo" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Gift-Maposa&show_icons=true&locale=en&layout=compact" alt="Gift-Maposa" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Gi-ddo&show_icons=true&locale=en" alt="Gi-ddo" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Gift-Maposa&show_icons=true&locale=en" alt="Gift-Maposa" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Gi-ddo&" alt="Gi-ddo" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Gift-Maposa&" alt="Gift-Maposa" /></p>
+
+<!-- https://github.com/Gift-Maposa -->
