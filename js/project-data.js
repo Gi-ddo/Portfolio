@@ -8,7 +8,8 @@ export const projectOrder = [
   "reclaim",
   "fatpack-joe",
   "herbanetics",
-  "uknow"
+  "uknow",
+  "mashoota"
 ];
 
 const data = {
@@ -111,6 +112,16 @@ const data = {
     actions: ["I mostly Quality Tested it and made the game expereience better.", "I fixed logic bugs and the ruleset of the cards and gameflow.", "I created the multiplayer base on the original design of the game using Unity's Netcode for Game Objects System, with that I was able to create a login and a lobby system.", "We were unable to finish because of time constraints, and ended up making it a PVE(Player vs Environment) game."],
     link: "https://disputed-people-games.itch.io/uknow-quiz-card-game",
     alignment: "right"
+  },
+  "mashoota": {
+    title: "Scotts Mashoota",
+    short_description: "Snap a pic of the fastest Mzansi super star.",
+    description: "Time your snaps to capture the fastest Mzansi super star in this fun and fast paced game. The game is a simple camera shooting game where you have to time your shots to get a picture of Scotts Maphuma.",
+    gif: "./assets/gifs/mashoota.gif",
+    tech: ["Unity", "C#", "Google Play APIs", "Git"],
+    actions: ["I created the camera shooting mechanic","I also worked on the UI Integration", "I created the game flow logic", "I uploaded the game to the Google Play Store."],
+    link: "https://play.google.com/store/apps/details?id=com.Itthynkgaming.ProjectMashoota&hl=en",
+    alignment: "left"
   }
 };
 
