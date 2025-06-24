@@ -41,7 +41,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["So this was the first game where I created a character controller using the state machine architecture.", "I combined that with the animation system in Unity to bring the character to life.", "I worked on creating a power up system with different progressions through rarities.", "I used an extensive event bus system to drive different actions and  logic flows of the game.", "Created enemy AI logic using the same state machine architecture.", "Used optimization techniques to help the game run at smoother frame rates."],
     link: "https://disputed-people-games.itch.io/khamani-arena-of-the-gods",
-    alignment: "right"
+    alignment: "left"
   },
   "herbanetics": {
     title: "Herbanetics",
@@ -51,7 +51,7 @@ const data = {
     tech: ["Unity", "C#", "Google Play APIs", "Git"],
     actions: ["I implemented the entire codebase for the game.", "I created the core mechanics and the power-up system.", "I created the level spawning system, the score, the enemy AI, everything gameplay wise, and the UI.", "I implemented the power progression system.", "I added the game through Play Store."],
     link: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Herbantics",
-    alignment: "left"
+    alignment: "right"
   },
   "hyper-star-fury": {
     title: "Hyper Star Fury",
@@ -92,7 +92,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["I worked on a car controller, it was my first attempt.", "I experimented  with wheel colliders in different configurations along with different physics materials to create an experience that fit the design of the game."],
     link: "https://disputed-people-games.itch.io/wacky-deliveries",
-    alignment: "left",
+    alignment: "right",
   },
   "plant-mom-match": {
     title: "Plant Mom Match",
@@ -102,7 +102,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["I worked on the match 3 aspect of the game. ", "I implemented the entire logic flow of that part of the game, from making the grid, the matching logic all of that stuff."],
     link: "https://disputed-people-games.itch.io/plant-mom-match",
-    alignment: "right"
+    alignment: "left"
   },
   "uknow": {
     title: "UKNOW",
