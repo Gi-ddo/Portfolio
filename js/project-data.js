@@ -120,9 +120,19 @@ const data = {
     description: "Time your snaps to capture the fastest Mzansi super star in this fun and fast paced game. The game is a simple camera shooting game where you have to time your shots to get a picture of Scotts Maphuma.",
     gif: "./assets/gifs/mashoota.gif",
     tech: ["Unity", "C#", "Google Play APIs", "Git"],
-    actions: ["I created the camera shooting mechanic","I also worked on the UI Integration", "I created the game flow logic", "I uploaded the game to the Google Play Store."],
+    actions: ["I created the camera shooting mechanic.","I also worked on the UI Integration", "I created the game flow logic", "I uploaded the game to the Google Play Store."],
     link: "https://play.google.com/store/apps/details?id=com.Itthynkgaming.ProjectMashoota&hl=en",
     alignment: "left"
+  },
+  "super-diski": {
+    title: "Super Diski FC",
+    short_description: "Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles.",
+    description: "Super Diski FC is a mobile football puzzle game where physics meets flair, and every shot is a flex. Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles. Customise your style with stadium skins, flashy ball designs, and trail effects that bring pure heat to the pitch. It’s brainy, bouncy, and full of local flavour.",
+    gif: "./assets/gifs/super-diski.gif",
+    tech: ["Unity", "C#", "Google Play APIs", "Git"],
+    actions: ["I created the level select system for the game.", "I made the whole shop system.", "I creted the Menu Navigation system.", "I created and implemented the Gameplay flow logic (Win conditions, Lose conditions, Progression system, Loading Sytem).", "I implemented Custom Scriptable Object handlers per designer requests.", "I implemented Analytics in the game.", "I implemented in app reviews for Google Play Store.", "I added the game on the Google Play Store."],
+    link: "https://play.google.com/store/apps/details?id=com.DisputedPeopleGames.SuperDiskiFC",
+    alignment: "right"
   }
 };
 
