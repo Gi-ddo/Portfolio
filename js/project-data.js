@@ -1,5 +1,6 @@
 export const projectOrder = [
   "reclaim",
+  "super-diski",
   "fatpack-joe",
   "khamani",
   "herbanetics",
@@ -22,6 +23,16 @@ const data = {
     actions: ["I worked on the character controller.", "I created the tower generation system.", "I created the power up system.", "I created the scene fade shader we used for scene transition(we can select different ones).", "I expanded on my input system logic and made a system to change the UI images based on UI.", "I worked on the level elements that are used in the level designs. <br> This was a submission for the Solar Punk Game Jam 2025."],
     link: "https://disputed-people-games.itch.io/reclaim",
     alignment: "left"
+  },
+  "super-diski": {
+    title: "Super Diski FC",
+    short_description: "Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles.",
+    description: "Super Diski FC is a mobile football puzzle game where physics meets flair, and every shot is a flex. Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles. Customise your style with stadium skins, flashy ball designs, and trail effects that bring pure heat to the pitch. It’s brainy, bouncy, and full of local flavour.",
+    gif: "./assets/gifs/super-diski.gif",
+    tech: ["Unity", "C#", "Google Play APIs", "Git"],
+    actions: ["I created the level select system for the game.", "I made the whole shop system.", "I creted the Menu Navigation system.", "I created and implemented the Gameplay flow logic (Win conditions, Lose conditions, Progression system, Loading Sytem).", "I implemented Custom Scriptable Object handlers per designer requests.", "I implemented Analytics in the game.", "I implemented in app reviews for Google Play Store.", "I added the game on the Google Play Store."],
+    link: "https://play.google.com/store/apps/details?id=com.DisputedPeopleGames.SuperDiskiFC",
+    alignment: "right"
   },
   "fatpack-joe": {
     title: "Fatpack Joe",
@@ -123,16 +134,6 @@ const data = {
     actions: ["I created the camera shooting mechanic.","I also worked on the UI Integration", "I created the game flow logic", "I uploaded the game to the Google Play Store."],
     link: "https://play.google.com/store/apps/details?id=com.Itthynkgaming.ProjectMashoota&hl=en",
     alignment: "left"
-  },
-  "super-diski": {
-    title: "Super Diski FC",
-    short_description: "Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles.",
-    description: "Super Diski FC is a mobile football puzzle game where physics meets flair, and every shot is a flex. Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles. Customise your style with stadium skins, flashy ball designs, and trail effects that bring pure heat to the pitch. It’s brainy, bouncy, and full of local flavour.",
-    gif: "./assets/gifs/super-diski.gif",
-    tech: ["Unity", "C#", "Google Play APIs", "Git"],
-    actions: ["I created the level select system for the game.", "I made the whole shop system.", "I creted the Menu Navigation system.", "I created and implemented the Gameplay flow logic (Win conditions, Lose conditions, Progression system, Loading Sytem).", "I implemented Custom Scriptable Object handlers per designer requests.", "I implemented Analytics in the game.", "I implemented in app reviews for Google Play Store.", "I added the game on the Google Play Store."],
-    link: "https://play.google.com/store/apps/details?id=com.DisputedPeopleGames.SuperDiskiFC",
-    alignment: "right"
   }
 };
 
