@@ -42,7 +42,7 @@ const data = {
     tech: ["Unity", "C#", "Google Play APIs", "Iron Source APIs", "Git"],
     actions: ["I implemented the entire codebase for the game.", "I created the core mechanics, the jetpack, created the power-up system, the in game shop.", "I created the level spawning system, the score, the enemy AI, everything gameplay wise.", "I added the game through Play Store.", "I implemented rewarded ads and interstial ads using Iron Source's API.", "I integrated the Google Play games API into the game to implement a leader board in the game."],
     link: "https://play.google.com/store/apps/details?id=com.AtrybuteGraphics.FatPackJoe",
-    alignment: "right"
+    alignment: "left"
   },
   "khamani": {
     title: "Khamani: The Lion of Summer",
@@ -52,7 +52,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["So this was the first game where I created a character controller using the state machine architecture.", "I combined that with the animation system in Unity to bring the character to life.", "I worked on creating a power up system with different progressions through rarities.", "I used an extensive event bus system to drive different actions and  logic flows of the game.", "Created enemy AI logic using the same state machine architecture.", "Used optimization techniques to help the game run at smoother frame rates."],
     link: "https://disputed-people-games.itch.io/khamani-arena-of-the-gods",
-    alignment: "left"
+    alignment: "right"
   },
   "herbanetics": {
     title: "Herbanetics",
@@ -62,7 +62,7 @@ const data = {
     tech: ["Unity", "C#", "Google Play APIs", "Git"],
     actions: ["I implemented the entire codebase for the game.", "I created the core mechanics and the power-up system.", "I created the level spawning system, the score, the enemy AI, everything gameplay wise, and the UI.", "I implemented the power progression system.", "I added the game through Play Store."],
     link: "https://play.google.com/store/apps/details?id=com.DefaultCompany.Herbantics",
-    alignment: "right"
+    alignment: "left"
   },
   "hyper-star-fury": {
     title: "Hyper Star Fury",
@@ -72,7 +72,7 @@ const data = {
     tech: ["Unity", "C#", "Google APIs"],
     actions: ["I created the shooting mechanics.", "I made the boss logic, and made the power up system in the game.", "I also worked on porting the game from pc to mobile and added it to the Google Play Store."],
     link: "https://play.google.com/store/apps/details?id=com.itthnkgaming.hyperStarFury&hl=en",
-    alignment: "left"
+    alignment: "right"
   },
   "saw-a-kraken": {
     title: "I Saw A Kraken",
@@ -82,7 +82,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["I made the saw mechanic, made all the bosses.", "I created a scalable menu navigation system that is usable for all controls."],
     link: "https://disputed-people-games.itch.io/i-saw-a-kraken",
-    alignment: "right"
+    alignment: "left"
   },
   "explosive-finger": {
     title: "Explosive Finger",
@@ -92,7 +92,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["I set up the touch logic for how the projectile is shot.", "I made all the systems that govern the game.", "The most interesting part of this game was getting the touch logic to work, because it sort of works like a sling shot, so figuring that part out was fun and it was a new mechanic that I wasn't familiar with."],
     link: "https://disputed-people-games.itch.io/explosive-finger",
-    alignment: "left",
+    alignment: "right",
   },
   
   "wacky-deliveries": {
@@ -103,7 +103,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["I worked on a car controller, it was my first attempt.", "I experimented  with wheel colliders in different configurations along with different physics materials to create an experience that fit the design of the game."],
     link: "https://disputed-people-games.itch.io/wacky-deliveries",
-    alignment: "right",
+    alignment: "left",
   },
   "plant-mom-match": {
     title: "Plant Mom Match",
@@ -113,7 +113,7 @@ const data = {
     tech: ["Unity", "C#", "Git"],
     actions: ["I worked on the match 3 aspect of the game. ", "I implemented the entire logic flow of that part of the game, from making the grid, the matching logic all of that stuff."],
     link: "https://disputed-people-games.itch.io/plant-mom-match",
-    alignment: "left"
+    alignment: "right"
   },
   "uknow": {
     title: "UKNOW",
@@ -123,7 +123,7 @@ const data = {
     tech: ["Unity", "C#", "Google Play APIs", "Git"],
     actions: ["I mostly Quality Tested it and made the game expereience better.", "I fixed logic bugs and the ruleset of the cards and gameflow.", "I created the multiplayer base on the original design of the game using Unity's Netcode for Game Objects System, with that I was able to create a login and a lobby system.", "We were unable to finish because of time constraints, and ended up making it a PVE(Player vs Environment) game."],
     link: "https://disputed-people-games.itch.io/uknow-quiz-card-game",
-    alignment: "right"
+    alignment: "left"
   },
   "mashoota": {
     title: "Scotts Mashoota",
@@ -133,7 +133,7 @@ const data = {
     tech: ["Unity", "C#", "Google Play APIs", "Git"],
     actions: ["I created the camera shooting mechanic.","I also worked on the UI Integration", "I created the game flow logic", "I uploaded the game to the Google Play Store."],
     link: "https://play.google.com/store/apps/details?id=com.Itthynkgaming.ProjectMashoota&hl=en",
-    alignment: "left"
+    alignment: "right"
   }
 };
 
