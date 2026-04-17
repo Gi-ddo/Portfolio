@@ -163,7 +163,8 @@ body {
 }
 
 .intro {
-  max-width: 60%;
+  max-width: 600px;
+  flex: 1;
 }
 
 .btn-primary,
@@ -630,22 +631,30 @@ body {
 
 /* Glassmorphism effect for images */
 .glass-image {
+  width: 420px;
+  height: 520px;
+  flex-shrink: 0;
+  overflow: hidden;
+
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
   border-radius: 50%;
-  padding: 2px;
-  display: inline-block;
-  transition: all 0.3s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .glass-image img {
-  display: block;
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .actions-section ul {
@@ -669,6 +678,15 @@ body {
 @media (max-width: 1024px) {
   html, body {
     background-color: var(--primary-color);
+  }
+
+  .glass-image {
+    width: 320px;
+    height: 420px;
+  }
+
+  .intro {
+    max-width: 100%;
   }
 
   #menu-button, #close-button {
@@ -721,10 +739,15 @@ body {
   }
 
   .landing {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 2rem;
+  background-color: var(--primary-color);
+  min-height: calc(100vh - 80px);
+}
 
   .profile-pic {
     margin-top: 2rem;
@@ -760,6 +783,16 @@ body {
 
   h1, h2, h3 {
     font-size: 1.2rem;
+  }
+
+  .glass-image {
+    width: 260px;
+    height: 340px;
+  }
+
+  .landing {
+    gap: 2rem;
+    padding: 3rem 1.5rem;
   }
 
   .btn-primary,
