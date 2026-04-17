@@ -17,10 +17,17 @@ const data = {
   "reclaim": {
     title: "Reclaim",
     short_description: "Restore life to a post-climate-collapse world in this platformer.",
-    description: "<strong>RECLAIM</strong> is a minimalist, movement-driven 2.5D platformer set in a future where the world is healing from the aftermath of a climate collapse. You play as a Seedbearer, part of a new generation trained to bring life back to the abandoned towers of the old world.Each climb begins stark, still, forgotten. But the moment you plant the seed, everything changes. Nature awakens, vibrant and fast-moving, racing upward through the tower as roots, leaves, and light reclaim the space. It’s beautiful, it’s alive — and it won’t wait for you!",
+    // description: "<strong>RECLAIM</strong> is a minimalist, movement-driven 2.5D platformer set in a future where the world is healing from the aftermath of a climate collapse. You play as a Seedbearer, part of a new generation trained to bring life back to the abandoned towers of the old world.Each climb begins stark, still, forgotten. But the moment you plant the seed, everything changes. Nature awakens, vibrant and fast-moving, racing upward through the tower as roots, leaves, and light reclaim the space. It’s beautiful, it’s alive — and it won’t wait for you!",
+    description: "Due to time constraints on this project we decided to use an external character controller for the project. However the character controller didn't fully support the requirements for the project. So I had to get familiar with the asset and modify it to support the requirements of the project.",
     gif: "./assets/gifs/reclaim.gif",
     tech: ["Unity", "C#", "Git"],
-    actions: ["I worked on the character controller.", "I created the tower generation system.", "I created the power up system.", "I created the scene fade shader we used for scene transition(we can select different ones).", "I expanded on my input system logic and made a system to change the UI images based on UI.", "I worked on the level elements that are used in the level designs. <br> This was a submission for the Solar Punk Game Jam 2025."],
+    actions: [
+      "Firstly, the character controller was handled through one long player controller script that handled everything else there. This wasn't very ideal so I shifted pretty much all of the logic into distinct states where it was easier for me to understand what was going on and to make it easier to debug if there were any issues. So I used the state machine pattern to achieve this and at the end I had multiple scripts that handled different states of the character controller such as walking, jumping, wall sliding etc.",
+      "After that I had a good idea of where everything was and how I could start adding new functionality, so the first thing I added was the ability to interact with the slippery slopes for the player. The desgin required that the player was able to maneuver through those. The next thing I did was a parkour move over a distinct block. This was a bery fun mechanic to add as it challenged me in a few ways.",
+      "One how would I manipulate 2D sprites in ways to make the animations look good while the action occured.",
+      "Challenging how I would use input from different directions (There was a bug where if I parkoured from the left side then the parkour will go to the right instead of the left so I had to find a way to deal with that).",
+      "Also ensuring smooth animation transition from parkour back to running.",
+      ""],
     link: "https://disputed-people-games.itch.io/reclaim",
     alignment: "left"
   },
@@ -30,7 +37,12 @@ const data = {
     description: "Super Diski FC is a mobile football puzzle game where physics meets flair, and every shot is a flex. Tap, hold, and launch the ball through a maze of moving platforms, launch pads, energy barriers, and other tricky obstacles. Customise your style with stadium skins, flashy ball designs, and trail effects that bring pure heat to the pitch. It’s brainy, bouncy, and full of local flavour.",
     gif: "./assets/gifs/super-diski.gif",
     tech: ["Unity", "C#", "Google Play APIs", "Git"],
-    actions: ["I created the level select system for the game.", "I made the whole shop system.", "I creted the Menu Navigation system.", "I created and implemented the Gameplay flow logic (Win conditions, Lose conditions, Progression system, Loading Sytem).", "I implemented Custom Scriptable Object handlers per designer requests.", "I implemented Analytics in the game.", "I implemented in app reviews for Google Play Store.", "I added the game on the Google Play Store."],
+    actions: [
+      "Super Diski FC is a game with many levels so we had to create a level select system that reflects that. The system is fairly simple as it loads up all the levels in the game but locks levels that haven't been completed yet. The system also displays the amount of stars collected per levels and whether or not if you've completed the level through one hit. So we have quite of bit of fun stuff that we added to the level select system. ",
+      "Super Diski has a shop system where players can but various upgrades and visual effects that they will use in game. The biggest challenge I faced was finding a way to translate the store information into the game information. For things like stadium visuals, the ball selected for the effects selected/bought for scoring and hitting the ball etc. So I created a manager that stored all related information about the various items, and I used a JSON approach to save that information and restore it. This was done through a notification system through IDs that linked various items to their scriptable objects and we can relate that info back to the game when we loaded each level. This was a tough challenge for me and I don't think I did well for that system but it was a good attempt and it worked. I learnt a lot from that system about saving information from various scenes and how to retain that info.",
+      "I also worked on Gameplay flow logic. Creating the winning and lose conditions of the level and ultimately a progression system that keeps track of how many levels you've completed and how many stars you've collected in the game to progress through a new set of levels you need to have collected a set amount of stars to continue, so I was in charge of handling that system as well and it worked out pretty well.",
+      "I created and implemented the Gameplay flow logic (Win conditions, Lose conditions, Progression system, Loading Sytem)."
+    ],
     link: "https://play.google.com/store/apps/details?id=com.DisputedPeopleGames.SuperDiskiFC",
     alignment: "right"
   },
@@ -40,7 +52,10 @@ const data = {
     description: "Fatpack Joe is a humorous game about a kid who makes a jet-pack out of a couch, tape and a pair of missiles. The player is challenged to control this monstrosity to stop an alien invasion in single player or against other players in multiplayer. The invasion leads Joe on an adventure from Earth to other planets, realms and galaxies. The game is a unique spin on Afrofuturism: mixing elements of African art and the solarpunk aesthetic.",
     gif: "./assets/gifs/fat-pack-joe.gif",
     tech: ["Unity", "C#", "Google Play APIs", "Iron Source APIs", "Git"],
-    actions: ["I implemented the entire codebase for the game.", "I created the core mechanics, the jetpack, created the power-up system, the in game shop.", "I created the level spawning system, the score, the enemy AI, everything gameplay wise.", "I added the game through Play Store.", "I implemented rewarded ads and interstial ads using Iron Source's API.", "I integrated the Google Play games API into the game to implement a leader board in the game."],
+    actions: [
+      "I was the main programmer of this game so I designed and implemented all of the systems and mechanics of the game. From the flight controls to the power up systems, the shops, the enemy AI etc.",
+      "For Fatpack Joe, we implemented rewarded and interstial ads using Unity's Iron sources API. The game was also published on the Google Play Store. I also added the Google Play Games SDK to implement a leaderboard in the game."
+    ],
     link: "https://play.google.com/store/apps/details?id=com.AtrybuteGraphics.FatPackJoe",
     alignment: "left"
   },
@@ -50,7 +65,11 @@ const data = {
     description: "Khamani: The Lion of summer is an action is a 3D African Gods and Mythology inspired Action-Adventure Game. You play as Khamani, a skilled archer from Nubia and the last of his tribe that can transform into a lion.",
     gif: "./assets/gifs/khamani.gif",
     tech: ["Unity", "C#", "Git"],
-    actions: ["So this was the first game where I created a character controller using the state machine architecture.", "I combined that with the animation system in Unity to bring the character to life.", "I worked on creating a power up system with different progressions through rarities.", "I used an extensive event bus system to drive different actions and  logic flows of the game.", "Created enemy AI logic using the same state machine architecture.", "Used optimization techniques to help the game run at smoother frame rates."],
+    actions: [
+      "Khamani was the first project which I used the state machine pattern for the first time to create a character controller. It was a tough integration because I was converting it from a previously created character controller, but it was a good experience which I've taken with me through all the projects I've worked on since. I also extended this to create the enemy AI using the same pattern.",
+      "This was one fo the first big projects I've worked on, so for this I had to create an event bus to handle alot of the different actions and logic flows of the game. So I went to research on how to create an event bus.",
+      "The game wasn't performing well so the team and I had to implore different optimization techniques to make sure the game runs well. One of these techniques include using occlusion culling for the environment, Static batching for game objects and Static Instancing for shaders and materials. For scripts we had to use pooling to refine our update loops and using more performant functions to achieve the same goals."
+    ],
     link: "https://disputed-people-games.itch.io/khamani-arena-of-the-gods",
     alignment: "right"
   },
